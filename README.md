@@ -5,7 +5,7 @@
 ### 安装
 
 ```sh
-npm i @tencent/react-docen-loader
+npm i react-docen-webpack-loader
 ```
 
 ### 使用
@@ -13,8 +13,8 @@ npm i @tencent/react-docen-loader
 目前只支持 webpack loader 内联使用方式。
 
 ```js
-import docData from '!!@tencent/react-docgen-loader!../shared-components/src/QueryForm/Select';
-// 或者 const docData = require('!!@tencent/react-docgen-loader!../shared-components/src/QueryForm/Select')
+import docData from '!!react-docgen-webpack-loader!../shared-components/src/QueryForm/Select';
+// 或者 const docData = require('!!react-docgen-webpack-loader!../shared-components/src/QueryForm/Select')
 ```
 
 可以配合 mdx 组件使用来生成属性表格。
@@ -27,7 +27,7 @@ subTitle: 选择器
 ---
 
 import PropsTable from '@theme/PropsTable';
-import docData from '!!@tencent/react-docgen-loader!../shared-components/src/QueryForm/Select';
+import docData from '!!react-docgen-loader!../shared-components/src/QueryForm/Select';
 
 ## Select Props
 
